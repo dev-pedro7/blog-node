@@ -58,7 +58,7 @@ app.get('/', (req, res) => {
 app.use('/admin', admin)
 
 //Outros
-const port = process.envPORT || 8081
+const port = process.env.PORT || 8081
 app.listen(port, () => {
     console.log('Server rodando')
 })
